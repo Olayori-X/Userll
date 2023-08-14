@@ -1,0 +1,165 @@
+*{
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+  }
+
+header{
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+
+#title{
+    margin: 20px 0px 10px 650px;
+    font-style: Brush Script MT;
+}
+
+#more{
+    float: left;
+    width: 40px;
+    margin: 20px 0px 10px 0px;
+}
+
+#moreoptions{
+    background-color: transparent;
+    border: none;
+    outline: none;
+}
+
+li{
+    list-style-type: none;
+    float: left;
+}
+
+#search {
+    padding-top: 20px;
+}
+
+#pdgallery{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+
+#pdgallery button, #categories button{
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 15px;
+    width: 300px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+}
+
+#pdgallery img{
+    max-width: 100%;
+    height: auto;
+}
+
+#pdgallery p{
+    margin: 5px 0;
+}
+
+#pdgallery button:hover{
+    background-color: blue;
+}
+
+#description {
+    width: 100%;
+    margin: auto;
+    height: 100%;
+    overflow: auto;
+    background-color: #ccc;
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+    text-align: center;
+    text-transform: capitalize;
+}
+
+#container{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    display: none;
+    z-index: 9;
+    background-color: transparent;
+    align-items: center;
+    justify-content: center;
+}
+
+#descContainer{
+    width: 70%;
+    margin: auto;
+    height: 60%;
+    background-color: #ccc;
+}
+
+#closedesc{
+    width: 100px;
+    height: 30px;
+    margin: auto;
+    background-color: red;
+    margin:auto;
+    border: none;
+    color: whitesmoke;
+    font-size : 15px;
+    float: right;
+}
+
+
+
+
+/* #categories button{
+    margin: 20px;
+    border: none;
+    color: #ccc;
+    font: normal normal bold 24px/320px Segoe UI;
+} */
+
+#categories button:hover {
+    color: white;
+    background-color: black;    
+}
+
+/* #phcat{
+    background-image: url("phones.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 300px;
+    height: 200px;
+}
+
+#jwcat{
+    background-image: url("jewelries.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 300px;
+    height: 200px;
+}
+
+#clcat{
+    background-image: url("clothes.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 300px;
+    height: 200px;
+}
+
+#shcat{
+    background-image: url("shoes.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 300px;
+    height: 200px;
+} */

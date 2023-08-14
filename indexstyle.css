@@ -1,0 +1,89 @@
+*{
+    box-sizing: border-box;
+}
+
+#navbar {
+    background-color: #ccc;
+    width: 100%;
+    font-style: Segoe UI;
+    font-size : 20px;
+    height: 80px;
+    /* padding-left: 40px; */
+    margin-top: 0px;
+    text-align: center;
+    position: static;
+}
+
+#title{
+    margin: 20px 0px 10px 650px;
+    font-style: Brush Script MT;
+}
+
+#more{
+    float: left;
+    width: 40px;
+    margin: 20px 0px 10px 0px;
+}
+
+#buttons{
+    letter-spacing: 2px;
+    margin: 20px 0px 20px 600px;
+}
+
+#moreoptions{
+    background-color: transparent;
+    border: none;
+    outline: none;
+}
+
+li{
+    list-style-type: none;
+    float: left;
+}
+
+#vrline{
+    border: 1px solid black;
+    height: 100px;
+    margin-left: 4px;
+    margin-right: 4px;
+}
+
+#products{
+    width: 100%;
+    height: 350px;
+    margin-top: 10px;
+    background-color: #ccc;
+}
+
+#products table {
+    height: 100%;
+    width: 100%;
+}
+
+#products img {
+    height: 350px;
+    width: 300px;
+}
+
+#blink{
+    letter-spacing: 5px;
+    width: 100%;
+    text-align: center;
+    font: normal normal bold 24px/32px Segoe UI;
+    /* border: 1px solid black; */
+    margin-top: 30px;
+    margin-bottom: 30px;
+    animation-name: blink;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes blink{
+    from{
+        color: black;
+    }
+
+    to{
+        color: transparent;
+    }
+}

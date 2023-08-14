@@ -1,0 +1,40 @@
+body {
+	background-color: #ccc;
+	/* font-family: Segoe UI; */
+	font-size : 20px;
+	font: normal normal normal 20px/24px Segoe UI;
+}
+
+h1, #header{
+	text-align: center;
+}
+
+h4{
+	font-family: Segoe UI;
+}
+
+form{
+	text-align: center;
+}
+
+input {
+	border-radius: 3px;
+	outline : none;
+	border: none;
+	margin-bottom: 10px;
+	width: 50%;
+}
+
+input:focus {
+	box-shadow: 2px 1px 5px 4px lightblue;
+}
+
+button {
+	border-radius: 3px;
+	border : none;
+	font-size: 20px;
+}
+
+button:hover {
+	background-color: rgb(43, 233, 27);
+}

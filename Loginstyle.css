@@ -1,0 +1,87 @@
+body {
+	background-color: #ccc;
+	/* text-align: center; */
+}
+
+h4{
+	font-family: Segoe UI;
+	display: block;
+}
+
+@media only screen and (max-width: 450px){
+	#container{
+		/* border: 1px solid black; */
+		width: 90%;
+		margin: auto;
+		height: 50%;
+		margin-top: 12%;
+	}
+}
+
+@media only screen and (min-width: 541px){
+	#container{
+		/* border: 1px solid black; */
+		width: 30%;
+		margin: auto;
+		height: 50%;
+		margin-top: 12%;
+	}
+}
+
+@media only screen and (min-width: 451px) and (max-width: 540px){
+	#container{
+		/* border: 1px solid black; */
+		width: 50%;
+		margin: auto;
+		height: 50%;
+		margin-top: 12%;
+	}
+}
+
+input {
+	border-radius: 3px;
+	outline : none;
+	border: none;
+	margin-bottom: 10px;
+}
+
+input:focus {
+	box-shadow: 2px 1px 5px 4px lightblue;
+}
+
+#LogInDiv{
+	width : 100%;
+	float: center;
+	margin: auto;
+	font: normal normal normal 20px/24px Segoe UI;
+}
+
+#EmailDiv {
+	position: relative;
+	text-align: left;
+}
+
+#PasswordDiv {
+	position: relative;
+	text-align: left;
+}
+
+/*#pDiv{
+	width: 30%;
+	margin: auto;
+}
+
+p {
+	position: relative;
+	text-align: left;
+}*/
+
+button {
+	border-radius: 8px;
+	border : none;
+	font-size: 20px;
+}
+
+button:hover {
+	background-color: rgb(43, 233, 27);
+}
