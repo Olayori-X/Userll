@@ -14,12 +14,12 @@ require 'phpmailer/src/SMTP.php';
     $mail->isSMTP();
     $mail->Host = 'smtp.gmail.com';
     $mail->SMTPAuth = true;
-    $mail->Username= 'olayori045@gmail.com';
-    $mail->Password = 'wbqojnoelxlxuomx';
+    $mail->Username= '[Email to send mail]';//Email to send mail
+    $mail->Password = 'Password';//Password
     $mail->SMTPSecure = 'ssl';
     $mail->Port = 465;
 
-    $mail->setFrom('olayori045@gmail.com');
+    $mail->setFrom('[Email to send mail]');//Email to send mail
 
     $mail->addAddress($email);
 
