@@ -14,28 +14,31 @@ if(isset($_GET)){
 
     if($confirmget){
         $cartproducts = [];
-        $cartptype = [];
-        $cartprname = [];
-        $cartpdprice = [];
-        $cartneg = [];
-        $cartprdesc = [];
-        $cartnumber = [];
-        $cartcity = [];
-        $cartstate = [];
-        $cartdate = [];
+        // $cartptype = [];
+        // $cartprname = [];
+        // $cartpdprice = [];
+        // $cartneg = [];
+        // $cartprdesc = [];
+        // $cartnumber = [];
+        // $cartcity = [];
+        // $cartstate = [];
+        // $cartdate = [];
 
-        while($row = mysqli_fetch_array($confirmget)){
-            $cartproducts[] = $row["Product"];
-            $cartptype[] = $row["Prdtype"];
-            $cartprname[] = $row["PDname"];
-            $cartpdprice[] = $row["PDprice"];
-            $cartneg[] = $row["Negotiable"];
-            $cartprdesc[] = $row["Description"];
-            $cartnumber[] = $row["Pnumber"];
-            $cartcity[] = $row["City"];
-            $cartstate[] = $row["State"];
-            $cartdate[] = $row["date_added"];
+        while($row = mysqli_fetch_assoc($confirmget)){
+            $cartproducts[] = $row;
+            // $cartptype[] = $row["Prdtype"];
+            // $cartprname[] = $row["PDname"];
+            // $cartpdprice[] = $row["PDprice"];
+            // $cartneg[] = $row["Negotiable"];
+            // $cartprdesc[] = $row["Description"];
+            // $cartnumber[] = $row["Pnumber"];
+            // $cartcity[] = $row["City"];
+            // $cartstate[] = $row["State"];
+            // $cartdate[] = $row["date_added"];
         }
+
+        header('Content-Type: application/json');
+        echo json_encode($cartproducts);
 
         
     }

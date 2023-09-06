@@ -17,6 +17,33 @@ email = sessionStorage.getItem("email");
 var cart = document.createElement('button');
 cart.innerHTML = "Add to Cart";
 
+function addToCart(ind){
+	let cartproducts = {
+		"productimg" : products[ind],
+		"product_type" : prdtype[ind],
+		"product_name" : prname[ind],
+		"price" : price[ind],
+		"negotiable" : negotiable[ind],
+		"desc" : desc[ind],
+		"phone" : phone[ind],
+		"city" : city[ind],
+		"state" : state[ind],
+		"email" : email
+	};
+
+	fetch("cart.php", {
+		"method" : "POST",
+		"headers" : {
+			"Content-Type" : "application/json; charset=utf-8"
+		},
+		"body" : JSON.stringify(cartproducts)
+	}).then(function(response){
+		return response.text();
+	}).then(function(data){
+		alert(data);
+	})
+}
+
 function loadProducts(){
 	var productsNo = products.length;	
 		
@@ -59,32 +86,7 @@ function loadProducts(){
 			 let index = products.indexOf(firstchild);
 
 			cart.addEventListener('click', function (){
-	
-				let cartproducts = {
-					"productimg" : products[index],
-					"product_type" : prdtype[index],
-					"product_name" : prname[index],
-					"price" : price[index],
-					"negotiable" : negotiable[index],
-					"desc" : desc[index],
-					"phone" : phone[index],
-					"city" : city[index],
-					"state" : state[index],
-					"email" : email
-				};
-	
-				fetch("cart.php", {
-					"method" : "POST",
-					"headers" : {
-						"Content-Type" : "application/json; charset=utf-8"
-					},
-					"body" : JSON.stringify(cartproducts)
-				}).then(function(response){
-					return response.text();
-				}).then(function(data){
-					alert(data);
-				})
-	
+				addToCart(index)
 			});
 
 			//show the description that has the same index with the src attribute
@@ -358,25 +360,16 @@ function showProducts(pbutton, str){
 	});
 }
 
-function getCartItem(){
-	fetch("getcart.php", {
-		"method" : "GET",
-		"headers" : {
-			"Content-Type" : "application/json; charset=utf-8"
-		}
-	})
-	.then(function(response){
-		return response.text();
-	}).then(function(data){
-		console.log(data);
-	})
-}
-
-function chat(){
-	fetch("https://api-preprod-sandbox.mirrorfly.com/api/v1")
-	.then(function(response){
-		return response.text();
-	}).then(function(data){
-		console.log(data);
-	})
-}
+// function getCartItem(){
+// 	fetch("getcart.php", {
+// 		"method" : "GET",
+// 		"headers" : {
+// 			"Content-Type" : "application/json; charset=utf-8"
+// 		}
+// 	})
+// 	.then(function(response){
+// 		return response.text();
+// 	}).then(function(data){
+// 		console.log(data);
+// 	})
+// }

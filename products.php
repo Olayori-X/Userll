@@ -14,14 +14,13 @@ if(isset($_SESSION['Email'])){
 	<link rel= "stylesheet" href= "https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
 	<script src= "https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 	<script src="./productjs.js"></script>
-	<script src="./index.js"></script>
-	<script src = "./chatjs.js"></script>
+	<script src="./cart.js"></script>
 </head>
-<body onload = "loadProducts(products); initializeSDK()">
+<body onload = "loadProducts(products);">
 
 <header>
 	<div id = "navbar">
-
+	<img src = "userll-removebg-preview.png" width= "200px" height= "100px">
 	<!--The search bar-->
 	<div id = "search"><input type = "text" id= "input" placeholder="Search">
 	<!--The search button-->
@@ -41,7 +40,7 @@ if(isset($_SESSION['Email'])){
 	<button type ="button" id = "jwcat">Jewelries</button>
 	<button type = "button" id = "clcat">Clothes</button>
 	<button type = "button" id = "shcat">Shoes</button>
-	<button tye = "button" onclick = "getCartItem()">Get</button>
+	<a href = "cartpage.php"><button tye = "button">Cart</button></a>
 	<button type = "button" onclick = "chat()">Chat</button>
 </div>
 
@@ -58,6 +57,10 @@ if(isset($_SESSION['Email'])){
 		<button type = "button" id = "closedesc" onclick = "closedesc()">Close</button>
 		<div id= "description"></div>
 	</div>
+</div>
+
+<div id = "cartitems">
+	
 </div>
 
 

@@ -41,6 +41,11 @@ li{
 
 #search {
     padding-top: 20px;
+    color: black;
+}
+
+#search input{
+    color: black;
 }
 
 #pdgallery{
@@ -118,48 +123,7 @@ li{
 }
 
 
-
-
-/* #categories button{
-    margin: 20px;
-    border: none;
-    color: #ccc;
-    font: normal normal bold 24px/320px Segoe UI;
-} */
-
 #categories button:hover {
     color: white;
     background-color: black;    
 }
-
-/* #phcat{
-    background-image: url("phones.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 300px;
-    height: 200px;
-}
-
-#jwcat{
-    background-image: url("jewelries.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 300px;
-    height: 200px;
-}
-
-#clcat{
-    background-image: url("clothes.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 300px;
-    height: 200px;
-}
-
-#shcat{
-    background-image: url("shoes.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 300px;
-    height: 200px;
-} */

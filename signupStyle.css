@@ -1,40 +1,64 @@
 body {
-	background-color: #ccc;
-	/* font-family: Segoe UI; */
-	font-size : 20px;
-	font: normal normal normal 20px/24px Segoe UI;
+	background-color: #f0f0f0; /* Background color */
 }
 
-h1, #header{
+#header {
+	background-color: #fff; /* Header background color */
 	text-align: center;
+	padding: 10px;
+	border-radius: 5px;
+	margin: 20px auto;
+	max-width: 400px;
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2); /* Box shadow for header */
 }
 
-h4{
-	font-family: Segoe UI;
+#titleHeader {
+	color: #007bff; /* Title color */
 }
 
-form{
+h1 {
 	text-align: center;
+	margin-top: 50px;
 }
 
-input {
-	border-radius: 3px;
-	outline : none;
-	border: none;
+.col-sm-6 {
+	background-color: #fff; /* Column background color */
+	padding: 20px;
+	border-radius: 5px;
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2); /* Box shadow for columns */
+}
+
+label {
+	color: #333; /* Label text color */
+}
+
+input[type="text"], input[type="tel"], input[type="email"], input[type="password"] {
+	width: 100%;
+	padding: 10px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	background-color: #f8f8f8;
+	color: #333;
 	margin-bottom: 10px;
-	width: 50%;
 }
 
-input:focus {
-	box-shadow: 2px 1px 5px 4px lightblue;
+#SubmitForm {
+	background-color: #007bff; /* Button background color */
+	color: #fff; /* Button text color */
+	border: none;
+	padding: 10px 20px;
+	border-radius: 4px;
+	cursor: pointer;
 }
 
-button {
-	border-radius: 3px;
-	border : none;
-	font-size: 20px;
+#SubmitForm:hover {
+	background-color: #0056b3; /* Hover color */
 }
 
-button:hover {
-	background-color: rgb(43, 233, 27);
+p {
+	text-align: center;
+}
+
+p a {
+	color: #007bff; /* Link color */
 }

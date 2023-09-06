@@ -1,87 +1,68 @@
 body {
-	background-color: #ccc;
-	/* text-align: center; */
+	background-color: #f0f0f0; /* Background color */
 }
 
-h4{
-	font-family: Segoe UI;
-	display: block;
-}
-
-@media only screen and (max-width: 450px){
-	#container{
-		/* border: 1px solid black; */
-		width: 90%;
-		margin: auto;
-		height: 50%;
-		margin-top: 12%;
-	}
-}
-
-@media only screen and (min-width: 541px){
-	#container{
-		/* border: 1px solid black; */
-		width: 30%;
-		margin: auto;
-		height: 50%;
-		margin-top: 12%;
-	}
-}
-
-@media only screen and (min-width: 451px) and (max-width: 540px){
-	#container{
-		/* border: 1px solid black; */
-		width: 50%;
-		margin: auto;
-		height: 50%;
-		margin-top: 12%;
-	}
-}
-
-input {
-	border-radius: 3px;
-	outline : none;
-	border: none;
-	margin-bottom: 10px;
-}
-
-input:focus {
-	box-shadow: 2px 1px 5px 4px lightblue;
-}
-
-#LogInDiv{
-	width : 100%;
-	float: center;
-	margin: auto;
-	font: normal normal normal 20px/24px Segoe UI;
-}
-
-#EmailDiv {
-	position: relative;
-	text-align: left;
-}
-
-#PasswordDiv {
-	position: relative;
-	text-align: left;
-}
-
-/*#pDiv{
-	width: 30%;
-	margin: auto;
-}
-
-p {
-	position: relative;
-	text-align: left;
-}*/
-
-button {
+#container {
+	background-color: #fff; /* Container background color */
 	border-radius: 8px;
-	border : none;
-	font-size: 20px;
+	padding: 20px;
+	margin: auto;
+	max-width: 400px;
+	margin-top: 50px;
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2); /* Box shadow for container */
 }
 
-button:hover {
-	background-color: rgb(43, 233, 27);
+#titleHeader {
+	color: #007bff; /* Title color */
+}
+
+h4 {
+	color: #333; /* Heading color */
+	margin-bottom: 20px;
+}
+
+.error {
+	color: red; /* Error message color */
+}
+
+#LogInDiv {
+	margin-top: 20px;
+}
+
+label {
+	color: #333; /* Label text color */
+}
+
+#EmailDiv, #PasswordDiv {
+	margin-bottom: 20px;
+}
+
+input[type="email"], input[type="password"] {
+	width: 100%;
+	padding: 10px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	background-color: #f8f8f8;
+	color: #333;
+}
+
+#logIn {
+	background-color: #007bff; /* Button background color */
+	color: #fff; /* Button text color */
+	border: none;
+	padding: 10px 20px;
+	border-radius: 4px;
+	cursor: pointer;
+}
+
+#logIn:hover {
+	background-color: #0056b3; /* Hover color */
+}
+
+#pDiv {
+	text-align: center;
+}
+
+#pDiv a {
+	color: #007bff; /* Link color */
 }
